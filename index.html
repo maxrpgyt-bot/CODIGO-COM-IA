@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra seu Temperamento</title>
+    <link rel="stylesheet" href="style.css  ">
+</head>
+<body>
+    <header>
+        <h1>Descubra seu Temperamento</h1>
+        <p>Responda às perguntas abaixo para descobrir qual é o seu temperamento predominante.</p>
+    </header>
+        <main>
+            <section>
+                <div id="question-container" class="hide">
+                 <div id="answer-buttons" class="btn-grid">
+                <!-- Botões de resposta serão gerados aqui -->
+                 </div>
+                </div>
+                <div id="result-container" class="hide">
+                    <p id="resultado"></p>
+                <button id="restart-btn">Reiniciar</button>
+                </div>
+            </section>
+                <section>
+                    <section class="question"
+                    <h2>
+                        Como você se sente em situações sociais? 
+                    </h2>
+                    <div class="answers">
+                        <button data-tipo="sanguineo">Energizado e animado</button>
+                        <button data-tipo="fleumatico">Confortável e tranquilo</button>
+                        <button data-tipo="melancolico">Reservado e analítico</button>
+                        <button data-tipo="colerico">Ansioso e intenso</button>
+                    </div>
+                </section>
+                <section>
+                    <section class="question"
+                    <h2>
+                        Como você lida com o estresse? 
+                    </h2>
+                    <div class="answers">
+                        <button data-tipo="sanguineo">Procuro distrações e me socializo</button>
+                        <button data-tipo="fleumatico">Busco conforto e apoio de amigos</button>
+                        <button data-tipo="melancolico">Analiso a situação e busco soluções</button>
+                        <button data-tipo="colerico">Fico irritado e tento resolver rapidamente</button>
+                    </div>
+                </section>
+                    <section>
+                        <section class="question"
+                        <h2>
+                            Qual é a sua abordagem para tomar decisões? 
+                        </h2>
+                        <div class="answers">
+                            <button data-tipo="sanguineo">Sigo minha intuição e emoções</button>
+                            <button data-tipo="fleumatico">Penso nas consequências para os outros</button>
+                            <button data-tipo="melancolico">Analiso os prós e contras cuidadosamente</button>
+                            <button data-tipo="colerico">Tomo decisões rapidamente e com confiança</button>
+                        </div>
+                    </section>
+                        <section>
+                            <section class="question"
+                            <h2>
+                                Como você lida com mudanças e imprevistos? 
+                            </h2>
+                            <div class="answers">
+                                <button data-tipo="sanguineo">Adapto-me facilmente e vejo como uma oportunidade</button>
+                                <button data-tipo="fleumatico">Prefiro estabilidade, mas tento me adaptar</button>
+                                <button data-tipo="melancolico">Fico ansioso, mas tento encontrar uma solução</button>
+                                <button data-tipo="colerico">Fico frustrado, mas tento controlar a situação</button>
+                            </div>
+                        </section>
+                        <section>
+                            <section class="question"
+                            <h2>
+                                Qual é a sua abordagem para resolver conflitos? 
+                            </h2>
+                            <div class="answers">
+                                <button data-tipo="sanguineo">Tento encontrar um meio-termo e manter a paz</button>
+                                <button data-tipo="fleumatico">Evito o conflito, mas tento ouvir ambos os lados</button>
+                                <button data-tipo="melancolico">Analiso o problema e tento encontrar uma solução lógica</button>
+                                <button data-tipo="colerico">Enfrento o conflito de frente e tento resolver rapidamente</button>
+                            </div>
+                        </section>
+                        <section>
+                            <section class="question"
+                            <h2>
+                                Como você se sente em relação a novas experiências? 
+                            </h2>
+                            <div class="answers">
+                                <button data-tipo="sanguineo">Animado e curioso para experimentar coisas novas</button>
+                                <button data-tipo="fleumatico">Cauteloso, mas aberto a novas experiências</button>
+                                <button data-tipo="melancolico">Ansioso, mas disposto a tentar coisas novas</button>
+                                <button data-tipo="colerico">Relutante, prefiro o que já conheço</button>
+                            </div>
+                        </section>
+                        <section>
+                            <section class="question"
+                            <h2>
+                                Qual é a sua abordagem para lidar com críticas? 
+                            </h2>
+                            <div class="answers">
+                                <button data-tipo="sanguineo">Aceito as críticas de forma leve e tento aprender com elas</button>
+                                <button data-tipo="fleumatico">Fico chateado, mas tento entender o ponto de vista do outro</button>
+                                <button data-tipo="melancolico">Fico magoado, mas tento analisar a crítica para melhorar</button>
+                                <button data-tipo="colerico">Fico irritado e tento defender minha posição</button>
+                            </div>
+                        </section>
+                        <section>
+                            <section class="question"
+                            <h2>
+                                Como você se sente em relação a trabalhar em equipe? 
+                            </h2>
+                            <div class="answers">
+                                <button data-tipo="sanguineo">Adoro trabalhar em equipe e me sinto energizado por isso</button>
+                                <button data-tipo="fleumatico">Gosto de trabalhar em equipe, mas também aprecio meu tempo sozinho</button>
+                                <button data-tipo="melancolico">Prefiro trabalhar sozinho, mas posso colaborar quando necessário</button>
+                                <button data-tipo="colerico">Prefiro liderar a equipe e tomar as decisões</button>
+                            </div>
+                        </section>
+                        <section>
+                            <section class="question"
+                            <h2>
+                                Qual é a sua abordagem para lidar com o fracasso? 
+                            </h2>
+                            <div class="answers">
+                                <button data-tipo="sanguineo">Vejo o fracasso como uma oportunidade de aprendizado e sigo em frente</button>
+                                <button data-tipo="fleumatico">Fico desapontado, mas tento aprender com a experiência</button>
+                                <button data-tipo="melancolico">Fico arrasado, mas tento analisar o que deu errado para melhorar</button>
+                                <button data-tipo="colerico">Fico frustrado e tento evitar o fracasso a todo custo</button>
+                            </div>
+                        </section>
+                        <section>
+                            <section class="question"
+                                
+                            </h2> Como você se sente em relação a expressar suas emoções?
+                            <div class="answers">
+                                <button data-tipo="sanguineo">Adoro expressar minhas emoções e me sinto confortável fazendo isso</button>
+                                <button data-tipo="fleumatico">Gosto de expressar minhas emoções, mas também aprecio meu tempo sozinho para processá-las</button>
+                                <button data-tipo="melancolico">Prefiro manter minhas emoções para mim, mas posso compartilhar quando necessário</button>
+                                <button data-tipo="colerico">Prefiro controlar minhas emoções e não mostrá-las facilmente</button>
+                            </div>
+                        </section>
+        </main>
+        <footer>
+                <p>Desenvolvido por [Thiago].</p>
+                <p> 2026 Todos os direitos reservados.</p>
+        </footer>
+   <script src="script.js"></script>
+</body>
+</html>
